@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="image/icon.ico">
+	<title> 404 Page Not Found </title>
+</head>
+
+<body>
+	<!-- Container of the Page -->
+	<div id="container">
+		<!-- Content of the Page -->
+		<div class="content">
+			<h2> 404 </h2>
+			<h4> Ooops! Page Not Found </h4>
+			<p>
+				The page you were looking for doesn´t exist. You may
+				have mistyped the address or the page may have moved.
+			</p>
+			<!-- Buttom of Link -->
+			<a href="#"> Back To Home </a>
+		</div>
+	</div>
+
+	<!-- Script of the Container -->
+	<script type="text/javascript">
+		var container = document.getElementById('container');
+		window.onmousemove = function(e) {
+			var x = - e.clientX/5,
+				y = - e.clientY/5;
+			container.style.backgroundPositionX = x + 'px';
+			container.style.backgroundPositionY = y + 'px';
+		}
+	</script>
+</body>
+</html>
